@@ -5,8 +5,8 @@
     border-color: #135841;
     border-style: double;
     border-radius: 5px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 25%; /* or width: 300px; */
+    margin-right: 25%; /* margin: auto; */
 }
 .form {
     padding-left: 30%;
