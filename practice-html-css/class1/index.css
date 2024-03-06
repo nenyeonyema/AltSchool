@@ -1,0 +1,12 @@
+/* Note: (ctrl /) slash gives us css comments */
+/* Opacity ranges from 0 to 1 with 1 being the thickest color and 0 the faintiest */
+body {
+    background-image: url()
+}
+.hfive {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hsix {
+    color: darkorange;
+}

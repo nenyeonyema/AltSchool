@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+}
+nav {
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: none;
+    
+    
+}
+nav button {
+    display: none;
+}
+
+nav h3 {
+    font-size: 22px;
+}
+/* Tablets */
+@media only screen and (min-width: 600px)
+{
+    /* body {
+
+    } */
+}
+
+/* Laptops */
+@media only screen and (min-width: 1024px)
+{
+    nav h3 {
+        display: none;
+    }
+    nav {
+        padding: 16px 100px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    nav button {
+        display: flex;
+    }
+}

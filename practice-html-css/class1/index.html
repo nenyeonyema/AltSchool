@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        /* this style the "class" given attributes using the dot(.) */
+        .header {
+            color: greenyellow;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* This styles the "id" attributes using the # character */
+        #header {
+            color: blueviolet;
+            font-family: 'Courier New', Courier, monospace0;
+        } 
+    </style>
+</head>
+<body>
+    </br> <!-- The break element is a self closing tag -->
+    
+    <!-- Inline styling on the head elements, using style attributes with its value, used on h1 and h2, 
+        Note: That inline has more precendence over internal and external styling. -->
+    <h1 style="color: red;">Heading 1</h1>
+    <h2 style="color: blue;">Heading 2</h2>
+
+    <!-- Header h3 and h4 uses internal styling which uses the style tag <style> -->
+    <h3 class="header">Heading 3</h3>
+    <h4 id="header">Heading 4</h4>
+
+    <!-- Styles h5 and h6 headers with external styling, linked at the head tag-->
+    <h5 class="hfive">Heading 5</h5>
+    <h6 id="hsix">Heading 6</h6>
+    <!--Note: That attributes are always inside the opening tag-->
+    
+    </hr> <!-- This draws a horizontal rule/line-->
+    <p>Hello</p> <!-- Paragraph tag with opening and colsing tag-->
+    <!--The anchor tag <a> links -->
+    <a href="https://www.w3schools.com/" target="_blank">Click Me</a> <!-- The target attribute opens the link in new tab-->
+    <!--First image from my laptop and second from the internet-->
+    <br>
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="profile_pics.jpg" width="300" height="300" alt="profilepics">
+    </a>
+    <br>
+    <img src="https://assets.vogue.com/photos/64871f4c43823e841f8c2ceb/master/pass/BAR-00238.jpg" width="300" height="300" alt="Barbie" >
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External linking of javascript file -->
+    <script type="text/javascript" src="index.js"></script>
+     <!-- Internal js placed inside the head tag -->
+    <script>
+        alert('Hello')
+    </script>
+</head>
+<body>
+     <!-- Internal javascript can be written in the body or in the head tag. Since the browser reads the head tag first down to every line on the html document, for best practices, if you want to use internl styling inside the body tag, it is best practice to place your script tag  imediately after the closing body tag. Note using script tag can be for whole body of the document without linking or connecting it to an id or class to work on an elements. But if you want target a specific element work or function, we use the id and class to target in  -->
+     <!-- Internal js immediately after the opening body tag -->
+     <script>
+        alert('Hi Welcome')
+    </script>
+
+    <!-- Inline usage of javascript -->
+    <!-- <button onclick="alert('hi')">Click me</button> -->
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Min-width are mostly for laptop or bigger screen sizes as it means
+to style with the properties below once the width of the screen is
+by min from 768 and above style with the below */
+/* For mobile phone its screen sizes are from 0 to 768px, so if we
+want to style for mobiles, we bound the width with
+a max-width and below to 0*/
+
+/*  Mobile First design approach
+means your default styling should be targeted for mobile
+then the rest of the added media queries should be for other
+screen sizes. Mobile first is best practices */
+/* 
+body {
+    background-color: red;
+    /* works for screen sizes from 0 to 768px */
+    /* @media only screen and (max-width: 768px) {
+        background-color: blue;
+    } */
+    /* @media only screen and (min-width: 600px) {
+        /* from 600px and above */
+        /* background-color: green; */
+    /* } */
+    /* @media only screen and (min-width: 1024px) {
+        /* from 1024px and above */
+        /* background-color: yellow;
+    }
+} * */
+
+/* For desktop first */
+
+body {
+    /* The background color will be default which applies for laptop first */
+    background-color: red;
+    /* works for screen sizes from 0 to 768px */
+    /* @media only screen and (max-width: 768px) {
+        background-color: blue;
+    } */
+    /* This target just mobile */
+    @media only screen and (max-width: 420px) {
+        /* from 600px and above */
+        background-color: green;
+    }
+    /* this target styles ipads that's for above  mobiles */
+    @media only screen and (min-width: 4204px) and (max-width: 1024px) {
+        /* from 1024px and above */
+        background-color: yellow;
+    }
+}

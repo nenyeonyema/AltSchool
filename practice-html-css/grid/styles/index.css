@@ -1,0 +1,9 @@
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    /* justify-content: center; */
+    border-style: solid dashed;
+}
+.grid1 {
+
+}

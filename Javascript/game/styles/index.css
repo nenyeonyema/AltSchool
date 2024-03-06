@@ -1,0 +1,63 @@
+div.main {
+    background-color: rgb(3, 119, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+div.build {
+    display: flex;
+    width: 25%;
+    height: 300px;
+}
+div.line {
+    background-color: white;
+    width: 10px;
+    height: 300px;
+}
+div.para1 {
+    margin-left: 10px;
+}
+h1.jss {
+    font-family: "Poppins";
+    color: white;
+    font-size: 46px;
+    line-height: 2.2;
+}
+div.game {
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    height: 300px;
+}
+div.thegame {
+    margin: 50px;
+}
+.para2, .para3 {
+    text-align: center;
+    font-family: "Poppins";
+    line-height: 2.0;
+    font-size: 15px;
+    font-weight: 500;
+}
+#number {
+    margin: 25px 0;
+    margin-left: 20px;
+    width: 80px;
+    height: 35px;
+}
+#check {
+    width: 90px;
+    height: 45px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(3, 119, 182);
+    color: white;
+    transition: background-color 0.15s;
+}
+#check:hover {
+    background-color:rgba(3, 119, 182, 0.76) ;
+}

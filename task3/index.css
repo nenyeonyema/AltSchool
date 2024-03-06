@@ -1,0 +1,62 @@
+
+body {
+    background-color: rgb(191, 230, 245);
+    margin: auto;
+}
+.img {
+    height: 300px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 35%;
+    object-position: top;
+    border-radius: 50%;
+}
+.headone {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #2b9fb6c2;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300px;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+p:hover {
+    text-decoration: underline;
+}
+.form {
+    justify-content: center;
+    margin-left: 50px;
+    padding: 0px 45px;
+}
+.hidden {
+    display: none;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+tr {
+    border-bottom: 1px solid black;
+}
+.prog:hover {
+    background-color: rgb(245, 143, 143);
+}
+.primary:hover {
+    background-color: rgb(200, 247, 231);
+}
+.year:hover {
+    background-color: rgb(237, 224, 250);
+}
+.note:hover {
+    background-color: rgb(145, 202, 155);
+}

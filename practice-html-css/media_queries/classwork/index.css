@@ -1,0 +1,15 @@
+/* For Mobile First */
+
+body {
+    /* for mobile */
+    background-color: aqua;
+
+    @media only screen and (min-width: 600px){
+        /* for tablets */
+        background-color: green;
+    }
+    @media only screen and (min-width: 1024px) {
+        /* for bigger screens like laptops */
+        background-color: brown;
+    }
+}
