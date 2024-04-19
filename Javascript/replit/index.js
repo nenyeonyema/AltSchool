@@ -1,3 +1,3 @@
-function sub(a, b) {
-    return b - a;
+function add(a, b) {
+    return b + a;
 }
