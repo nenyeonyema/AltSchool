@@ -92,4 +92,5 @@ function filNum(fil) {
     let pNum = fil.filter((value) => value > 2);
     return pNum;
 }
+
 console.log(filNum);
