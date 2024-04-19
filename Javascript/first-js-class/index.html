@@ -7,19 +7,39 @@
     <!-- External linking of javascript file -->
     <script type="text/javascript" src="index.js"></script>
      <!-- Internal js placed inside the head tag -->
-    <script>
+    <!-- <script>
         alert('Hello')
-    </script>
+    </script> -->
 </head>
 <body>
      <!-- Internal javascript can be written in the body or in the head tag. Since the browser reads the head tag first down to every line on the html document, for best practices, if you want to use internl styling inside the body tag, it is best practice to place your script tag  imediately after the closing body tag. Note using script tag can be for whole body of the document without linking or connecting it to an id or class to work on an elements. But if you want target a specific element work or function, we use the id and class to target in  -->
      <!-- Internal js immediately after the opening body tag -->
-     <script>
+     <!-- <script>
         alert('Hi Welcome')
-    </script>
-
+    </script> -->
+    <h1 id="my-title"></h1>
     <!-- Inline usage of javascript -->
     <!-- <button onclick="alert('hi')">Click me</button> -->
-    <p id="demo"></p>
+    <div id="demo"></div>
+    <p class="newdemo"></p>
+    <ul id="fruits">
+        <li>Banana</li>
+    </ul>
+    <ul name="desserts"></ul>
+    
+    <label id="para"></label>
+    <p id="a-demo1"></p>
+    <p id="a-demo2"></p>
+    <!-- The first button will use inline javascript which "onclick a html attributes" -->
+    <p id="demo3"></p>
+
+    <ul id="veggies">
+        <li>carrot</li>
+        <li>green beans</li>
+        <li>cabbage</li>
+    </ul>
+    <button id="myBtn1" onclick="doSomething()">Login</button>
+    <button id="myBtn2">Sign up</button>
+
 </body>
 </html>

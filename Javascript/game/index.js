@@ -15,7 +15,7 @@
 //  }
 //  console.log(Add(4, 7))
 
-const inputVal = document.querySelector('input')
+const inputVal = document.querySelector('#input')
 // console.log('The first query element is:', inputVal)
 
 const inputButton = document.getElementById('check')
@@ -23,29 +23,39 @@ const inputButton = document.getElementById('check')
 
 // const line = document.getElementsByClassName('thegame')[1]
 // console.log(line)
-const userGuess = document.getElementById('number')
-const actualVal = 46
+const userGuess = document.getElementById('number');
+const actualVal = 46;
 
 function displayVal(userGuess, actualVal) {
     // alert(inputVal.value)
-    if (userGuess.value === "") {
-        alert("Input is empty")
-    }
-    else if (parseInt(userGuess.value) === actualVal) {
-        alert("Congrats, You Guess Right!")
-    }
-    else if (parseInt(userGuess.value) <= 45){
-            alert("Try Again, Value is smaller than the guess")
-    }
-    else if (parseInt(userGuess.value) >= 46){
-        alert("Try Again, Value is bigger than the guess")
+    for (let i = 0; i < 5; i++) {
+        let count = 5;
+        if (userGuess.value === "") {
+            alert("Input is empty");
+        }
+        else if (Number(userGuess.value) === actualVal) {
+            alert("Congrats, You Guess Right!");
+        }
+        else if (Number(userGuess.value) <= 45){
+                alert("Try Again, Value is ssmaller than the guess");
+        }
+        else if (Number(userGuess.value) >= 46){
+            alert("Try Again, Value is bigger than the guess");
+        }
+     
+        if (count === 0) {
+            console.log("End of game");
+            break;
+        }
+        count -= 1;
     }
 }
-
 inputButton.addEventListener('click', function(e) {
     e.preventDefault();
-    displayVal(userGuess, actualVal);
+    displayVal(userGuess, actualVal); 
+    
 });
+
 // You addEventListener takes the type of event you want it to do and the function you want it to run.
 //  inputButton.addEventListener('click', function(e) {
 //     e.preventDefault()

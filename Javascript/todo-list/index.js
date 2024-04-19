@@ -22,11 +22,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const taskList = document.getElementById("lists");
     const taskArray = [];
 
+    //  A function that displays what the button will do. Seperation of concern
+
+    const addToDo = () => {
+
+    }
+
     // Listen to the event of clicking the button
     button.addEventListener("click", () => {
         // Check for the both inputs from the user
         if (taskName.value === "" || taskDescript.value === "") {
             alert("Please fill the form")
+            return;
         }; 
         // To build the input of the user into an object per user
         const task = {};
@@ -42,11 +49,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
         console.log(taskArray);
 
-        // To add the items in the array as list items in html <li> tag
-        const li = document.createElement('li');
-
         for (let i = 0; i < taskArray.length; i++) {
+             // To add the items in the array as list items in html <li> tag
+            const li = document.createElement('li');
+            li.innerHTML = `${taskArray[i].nameOfTask} <br /> ${taskArray[i].valueOfTask}`;
+
             console.log(taskArray[i]);
+            taskList.appendChild(li)
         }
     });
 });
